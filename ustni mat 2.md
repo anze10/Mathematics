@@ -130,6 +130,9 @@ Viri navajajo več posebnih oblik in vrst matrik:
 - **Glede na simetrijo:** **Simetrična** ($A = A^T$) in **poševno simetrična** matrika ($A = -A^T$).
 - **Glede na obrnljivost:** **Nesingularna** ali obrnljiva matrika (ima inverz, $\det A \neq 0$) in **singularna** matrika (nima inverza, $\det A = 0$).
 - **Ortogonalna matrika:** Kvadratna matrika, za katero velja $A \cdot A^T = A^T \cdot A = I$, kar pomeni, da je njen transponat hkrati njen inverz.
+- (Normalna matrika: podmnožica  ortagonalne matrike: $$A \dot A^{T} = A^{T} \dot A$$ )
+
+
 
 ### 20. Seštevanje matrik
 
@@ -300,6 +303,25 @@ Vektor v prostoru $\mathbb{R}^n$ je **urejena $n$-terica števil**, ki jih imenu
 
 **Realni vektorski prostor** je neprazna množica $\mathcal{V}$ elementov, ki jih imenujemo vektorji, skupaj z dvema definiranima operacijama: **seštevanjem vektorjev** in **množenjem vektorjev z realnimi skalarji**. Množica mora biti za obe operaciji **zaprta**, kar pomeni, da sta vsota dveh vektorjev iz $\mathcal{V}$ in produkt vektorja s skalarjem spet elementa iste množice $\mathcal{V}$. Poleg vektorjev v $\mathbb{R}^2$ in $\mathbb{R}^3$ so primeri vektorskih prostorov tudi množice vseh realnih matrik določene velikosti ali prostori polinomov.
 
+Definicija 3.1. Realni vektorski prostor je neprazna mnoˇzica V elementov, ki jih
+imenujemo vektorji, skupaj z dvema operacijama:
+• mnoˇzenje vektorjev iz V z realnimi ˇstevili oz. skalarji,
+• seˇstevanje vektorjev iz V.
+Vektorski prostor V je za obe operaciji zaprt, kar pomeni, da sta produkt vektorja s skalar-
+jem ter vsota dveh vektorjev x, y ∈ V spet vektorja vektorskega prostora V: λ x ∈ V in
+x + y ∈ V. Veljati morajo ˇse naslednje lastnosti:
+• seˇstevanje je komutativno: x + y = y + x,
+• seˇstevanje je asociativno: x + (y + z) = (x + y) + z,
+• obstaja niˇcelni vektor 0 ∈ V, ki je nevtralni element za seˇstevanje: x + 0 = x,
+• za vsak x ∈ V obstaja nasprotni vektor −x ∈ V, ki je inverzni element za seˇstevanje:
+x + (−x) = 0,
+• mnoˇzenje s skalarjem je distributivno glede na seˇstevanje vektorjev: λ(x + y) =
+λx + λy,
+• mnoˇzenje s skalarjem je distributivno glede na seˇstevanje skalarjev: (λ + μ)x =
+λx + μx,
+• (λμ)x = λ(μx),
+• skalar 1 je nevtralni element za mnoˇzenje s skalarjem: 1 · x = x.
+
 ### 42. Seštevanje vektorjev in množenje vektorja s skalarjem
 
 Za ti dve operaciji v vektorskem prostoru morajo veljati naslednje lastnosti:
@@ -345,6 +367,8 @@ Postopek izračuna lastnih parov poteka v naslednjih korakih:
 1. Enačbo $AX = \lambda X$ preoblikujemo v **homogen sistem** $(A - \lambda I)X = 0$.
 2. Lastne vrednosti dobimo z reševanjem **karakteristične enačbe** $\det(A - \lambda I) = 0$.
 3. Za vsako izračunano lastno vrednost posebej poiščemo pripadajoče **lastne vektorje** kot netrivialne rešitve homogenega sistema $(A - \lambda I)X = 0$. Vsaki lastni vrednosti pripada neskončno mnogo lastnih vektorjev, ki tvorijo lastni podprostor.
+
+S tem ko reče neskončno lastnih vektorjev, pozabi povedati, da so vsi med seboj linearno odvisni. Torej 5a in 2a sta oba lastna vektorja, ampak nista različna, samo linearna kombinacija drug drugega
 
 ### 50. Karakteristični polinom
 
